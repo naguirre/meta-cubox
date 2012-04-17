@@ -1,0 +1,25 @@
+This layer depends on:
+
+URI: git://git.openembedded.org/openembedded-core
+branch: master
+revision: HEAD
+
+URI: git://git.openembedded.org/meta-openembedded
+branch: master
+revision: HEAD
+
+Send pull requests to aguirre.nicolas@gmail.com
+
+Main layer maintainers: Nicolas Aguirre <aguirre.nicolas@gmail.com>
+
+Quick Setup with angstrom :
+
+git clone git://github.com/Angstrom-distribution/setup-scripts.git
+mkdir -p setup-scripts/sources
+cd setup-scripts/sources
+git clone git://github.com/naguirre/meta-cubox.git
+cd ..
+MACHINE="cubox" ./oebb.sh config cubox
+MACHINE="cubox" ./oebb.sh update
+source ~/.oe/environment-oecore
+bitbake efl-nodm-image
