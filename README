@@ -1,4 +1,4 @@
-This layer depends on:
+# This layer depends on:
 
 URI: git://git.openembedded.org/openembedded-core
 branch: master
@@ -12,7 +12,7 @@ Send pull requests to aguirre.nicolas@gmail.com
 
 Main layer maintainers: Nicolas Aguirre <aguirre.nicolas@gmail.com>
 
-Quick Setup with angstrom :
+# Quick Setup with angstrom :
 
 git clone git://github.com/Angstrom-distribution/setup-scripts.git
 mkdir -p setup-scripts/sources
@@ -23,3 +23,11 @@ MACHINE="cubox" ./oebb.sh config cubox
 MACHINE="cubox" ./oebb.sh update
 source ~/.oe/environment-oecore
 bitbake efl-nodm-image
+
+# Cubox drivers
+
+http://www.solid-run.com/mw/index.php/CuBox_Drivers
+
+- GPU OpenGL / OpenGL ES Drivers
+- GPU LCD / DirectFB Drivers
+- Video Engine Drivers
